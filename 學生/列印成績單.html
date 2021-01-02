@@ -5,11 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="jquery-1.4.min.js"></script>
         <title>Document</title>
-        <style>
-            table {
-                text-align: right;
-            }
-        </style>
+        <link rel="stylesheet" href="學生.css" />
         <script>
             $(document).ready(function () {
                 $('#search').click(function () {
@@ -42,15 +38,24 @@
         </script>
     </head>
     <body>
+        <div>
+            <p>
+                學生
+                <a href="學生.html"
+                    ><img src="學生.jpg" alt="學生" title="I am Student." style="float: right, margin= 15px"
+                /></a>
+            </p>
+        </div>
+        <input type="button" value="返回" id="logout" onclick="location.href='學生.html'" />
+        <hr />
         <form>
-            <select id="Sem" name="Sem">
+            <select class="Sem" name="Sem" style="width:270px">
                 <option selected>109上</option>
                 <option>109下</option>
                 <option>110上</option>
             </select>
-            <input type="button" id="search" value="查詢" class="forPrint" />
-            <input type="button" id="back" value="返回" class="forPrint" />
-            <input type="button" id="print" value="列印" class="forPrint" />
+            <input type="button" id="Search" value="查詢"/>
+            <input type="button" id="print" value="列印->"/>
         </form>
     </body>
 </html>
